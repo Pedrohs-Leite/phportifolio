@@ -1,0 +1,258 @@
+.contato {
+    padding: 50px 0;
+    background-image: url(../../../img/sobre-txt.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    
+}
+
+.contato-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    gap: 10em;
+}
+
+.info-contato {
+    width: 50%;
+    padding-right: 20px;
+    font-family: var(--font-secondary);
+}
+
+.info-contato h1 {
+    font-size: 1.5em;
+    margin: 20px 0px 30px 0px;
+    color: #ffffff;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-family: var(--font-primary);
+    padding: 15px 30px;
+    border-radius: 20px;
+    position: relative;
+}
+.insta{
+    background-image: linear-gradient(to right, #f58529, #f92772, #dd2476, #4c6ef5);
+}
+.zap{
+    background-image: linear-gradient(to right, #25d366, #128C7E);
+}
+.mail{
+    background-image: linear-gradient(to right, #fc232e 50%, #ffe4e4);
+}
+.icon{
+    position: absolute;
+    left: -55px;
+    animation: balanco-horizontal 0.5s ease-in-out infinite;
+}
+@keyframes balanco-horizontal {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(4px); /* ou -4px se quiser o oposto */
+    }
+  }
+
+.info-item i {
+    font-size: 2em;
+    margin-right: 15px;
+    color: #ffffff;
+}
+
+.info-item p {
+    margin: 5px 0px 0px 0px;
+    font-size: 1.5em;
+    color: #ffffff;
+    & a{
+        color: #ffffff;
+    }
+}
+
+
+.formulario {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto; /* Centraliza o formulário */
+    padding: 20px;
+    font-family: var(--font-secondary);
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+.formulario h1 {
+        color: #fff;
+}
+.formulario button{
+    padding: 15px 30px;
+}
+
+.contact_input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid var(--cor-primary);
+    border-radius: 4px;
+    font-size: 1em;
+    color: white;
+    background-color: var(--cor-bg2);
+}
+
+.contact_input::placeholder {
+        color: white;
+        opacity: 1;
+}
+
+textarea.contact_input {
+        resize: vertical;
+        height: 150px;
+}
+
+.contact__input {
+        width: 100%;
+        padding: 1rem 1.25rem;
+        border-radius: .5rem;
+        background-color: var(--cor-bg2);
+}
+
+.contact__input::placeholder {
+        color: #fff;
+}
+
+.formulario textarea {
+        height: 10em;
+        resize: none;
+        margin-bottom: 1rem;
+}
+
+.contact_message {
+        color: white; /* Define a cor do texto do parágrafo como branco */
+}
+@media (max-width: 1024px) {
+    .contato-box {
+        flex-direction: column;
+        gap: 3rem;
+        padding: 30px;
+    }
+
+    .info-contato {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .formulario {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 780px) {
+    .contact_input, 
+    .formulario textarea, 
+    .formulario button {
+        width: 100%;
+    }
+    .contato {
+        padding: 40px 5%;
+        background-image: none
+    }
+
+    .contato-box {
+        padding: 20px;
+        gap: 2rem;
+    }
+
+    .info-contato h3 {
+        font-size: 1.2em;
+    }
+
+    .info-item i {
+        font-size: 1.5em;
+    }
+
+    .info-item p {
+        font-size: 0.9em;
+    }
+
+    .formulario {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .contact_input {
+        padding: 15px;
+        font-size: 1.2em;
+    }
+
+    .formulario textarea {
+        height: 12em;
+        font-size: 1.2em;
+    }
+
+    .formulario button {
+        font-size: 1.2em;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .formulario {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+
+    .contact_input, 
+    .formulario textarea, 
+    .formulario button {
+        width: 100%;
+    }
+
+    .contato {
+        padding: 30px 5%;
+    }
+
+    .contato-box {
+        padding: 15px;
+        gap: 1.5rem;
+    }
+
+    .info-contato h3 {
+        font-size: 1.2em;
+    }
+
+    .info-item i {
+        font-size: 1.5em;
+    }
+
+    .info-item p {
+        font-size: 1.1em;
+    }
+
+    .contact_input {
+        padding: 18px;
+        font-size: 1.3em;
+    }
+
+    .formulario textarea {
+        height: 14em;
+        font-size: 1.3em;
+    }
+
+    .formulario button {
+        padding: 15px 30px;
+        font-size: 1.2em;
+    }
+}
+

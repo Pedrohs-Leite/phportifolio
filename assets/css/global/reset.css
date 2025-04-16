@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media (max-width: 768px) {
+    body{
+    overflow-x: hidden;
+    }
+}
+@media (max-width: 480px) {
+    body{
+        overflow-x: hidden;
+    }
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 8%;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+body{
+    background-color: var(--cor-bg);
+}
+/*==============================================================================================*/

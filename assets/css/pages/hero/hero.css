@@ -1,0 +1,179 @@
+
+section.hero-site {
+    background-color: black;
+    height: 100vh;
+    background-image: url(../../../img/bghero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+.hero-site .container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.txt-hero{
+    width: 100%; /* Ocupa 100% da largura do container */
+    max-width: 700px;
+    text-align: left;
+    margin-top: 40px;
+}
+.hero-site .txt-hero h1{
+    font-size: 2.5em;
+    line-height: 1.2;
+    font-weight: 200;
+    font-family: var(--font-primary);
+    margin-bottom: 10px;
+    
+}
+.hero-site .txt-hero p span{
+    display: block;
+}
+
+.hero-site button{
+    margin: 10px 0;
+    width: 400px;
+    height: 50px;
+    font-size: 16px;
+}
+
+.hero-site .txt-hero h1 span{
+    color: var(--cor-primary);
+    display: block;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    section.hero-site{
+        height: 100vh;
+        background-image: url('../../../img/bgmobile.webp');
+        background-position: bottom;
+    }
+    .hero-site {
+        height: auto;
+        padding: 90px 20px;
+    }
+
+    .hero-site .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-site .txt-hero h1 {
+        font-size: 2.2em;
+        line-height: 45px;
+    }
+    .hero-site button {
+        width: 300px;
+        height: 45px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    section.hero-site {
+        height: auto;
+        background-image: url('../../../img/bgmobile.webp');
+        background-position: top center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #00040C;
+        padding-top: 330px;
+        z-index: -1; /* 🔥 Aqui simula o espaço da imagem */
+        
+    }
+    .hero-site .txt-hero {
+        max-width: 100%;
+    }
+    .hero-site .txt-hero h1 {
+        font-size: 2.1em;
+        line-height: 20px;
+    }
+    .hero-site .txt-hero p {
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .hero-site button {
+        width: 100%;
+        max-width: 300px;
+        height: 50px;
+        font-size: 16px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    section.hero-site {
+        height: auto;
+        background-image: url('../../../img/bgmobile.webp');
+        background-position: top center;
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-color: #00030c;
+        padding-top: 300px; /* 🔥 Aqui simula o espaço da imagem */
+        padding-bottom: 40px;
+    }
+
+    .hero-site {
+        text-align: center;
+        padding: 100px 15px;
+    }
+    .txt-hero{
+        margin-top: 200px;
+    }
+    .hero-site .txt-hero h1 {
+        font-size: 2em;
+        line-height: 30px;      
+    }
+    .hero-site .txt-hero p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .hero-site button {
+        margin-top: 50px;
+        width: 100%;
+        height: 60px;
+        font-size: 18px;
+    }
+}
+@media (max-width: 390px) {
+    .hero-site {
+        height: auto; /* Remove altura fixa para evitar cortes */
+        padding: 60px 5%; /* Adiciona espaçamento interno */
+        text-align: center; /* Centraliza o conteúdo */
+    }
+
+    .hero-site .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .txt-hero {
+        max-width: 100%; /* Ajusta para ocupar toda a tela */
+        margin-top: 20px;
+    }
+
+    .hero-site .txt-hero h1 {
+        font-size: 1.2em; /* Diminui o tamanho do título */
+        line-height: 1.2;
+    }
+
+    .hero-site .txt-hero p {
+        font-size: 14px; /* Reduz o tamanho do texto */
+        line-height: 22px;
+        min-height: auto; /* Remove altura mínima */
+        margin-bottom: 15px;
+    }
+
+    .hero-site button {
+        width: 100%; /* Ocupa toda a largura disponível */
+        max-width: 300px;
+        height: 45px;
+        font-size: 14px;
+    }
+}
+

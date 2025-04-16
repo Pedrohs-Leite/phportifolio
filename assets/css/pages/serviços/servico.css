@@ -1,0 +1,53 @@
+section.servico{
+    height: 100%;
+    padding: 60px 4%;
+}
+.card i{
+    color: var(--cor-white);
+    font-size: 2em;
+}
+
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1em;
+
+}
+.card{
+    border: 2px solid var(--cor-primary);
+    padding: 25px;
+    border-radius: 5px;
+    text-align: center;
+    min-height: 250px; /* Altura mínima */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    transition: all .3s;
+    &:hover{
+        background: #000a26;
+        box-shadow: 4px 4px 8px rgba(84, 84, 84, 0.816);
+    }
+}
+
+.card h1 {
+    font-size: 1.2em;
+    color: var(--cor-primary);
+    margin-bottom: 15px;
+    font-family: var(--font-primary);
+}
+
+.card p {
+    font-size: 14px;
+    font-family: var(--font-secondary);
+    color: var(--cor-white);
+    line-height: 1.6;
+}
+@media (max-width: 780px) {
+    section.servico{
+        margin-top: 1em;
+    }
+    .card p {
+        font-size: 14.9px;
+    
+    }
+}

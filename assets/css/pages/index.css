@@ -1,0 +1,12 @@
+@import '../global/global.css';
+@import 'header/header.css';
+@import 'hero/hero.css';
+@import 'serviços/servico.css';
+@import 'projeto/projeto.css';
+@import 'sobre/sobre.css';
+@import 'contato/contato.css';
+@import 'footer/footer.css';
+@import 'skill/skill.css';
+
+
+

@@ -1,0 +1,165 @@
+@import "../../global/color.css";
+@import "../../global/fonts.css";
+
+section.sobre{
+    background-image: url(../../../img/sobre-txt.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 4%;
+}
+
+.container .sobre-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    color: var(--cor-white);
+}
+.sobre-box .sobre-img img{  
+    border-radius: 30px;
+    width: 350px;
+}
+.sobre-box .sobre-txt{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+.sobre-box .sobre-txt h2{
+    font-family: var(--font-primary);
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.sobre-box .sobre-txt p{
+    font-family: var(--font-secondary);
+    font-size: 1.1em;
+    
+    
+}
+.sobre-box .sobre-txt .p1{
+    color: var(--cor-primary);
+}
+.sobre-box .sobre-txt .p2{
+    margin: 2em 0;
+    font-size: 1.2em;
+    color: #cbcbcb;
+}
+.skills h1{
+    font-size: 1.7em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: var(--font-secondary);
+
+    & span{
+        color: var(--cor-primary);
+    }
+}   
+
+.skills .skill-box{
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    width: 260px;
+}
+.skills .skill-box ul{
+    list-style: disc;
+    display: grid;
+    grid-template-columns: repeat(2, auto); /* Mantém duas colunas */
+    gap: 10px; /* Reduz o espaçamento */
+
+    & li::marker{
+        color: #2EA1FF;
+    }
+}
+
+@media (max-width: 1024px) {
+    section.sobre {
+        margin-bottom: 2em; /* Mantém uma margem padrão */
+    }
+    .container .sobre-box {
+        gap: 40px; /* Reduz a distância entre os elementos */
+    }
+    
+    .sobre-box .sobre-txt h2 {
+        font-size: 2.5em; /* Diminui o título */
+    }
+
+    .sobre-box .sobre-txt p {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 780px) {
+
+    section.sobre {
+        background-image: none;
+        height: auto; /* Remove altura fixa para evitar corte */
+        padding: 10px 6%; /* Reduz o padding para diminuir o espaçamento */
+        margin-bottom: 1.5em; /* Reduz a margem inferior */
+    }
+
+    .container .sobre-box {
+        flex-direction: column;
+        align-items: center; /* Centraliza os itens */
+        text-align: center;
+    }
+
+    .sobre-box .sobre-img img {
+        width: 90%; 
+        max-width: 350px;
+    }
+
+    .sobre-box .sobre-txt h2 {
+        font-size: 2em; 
+    }
+    .sobre-box .sobre-txt {
+        max-width: 600px; 
+        width: 100%;
+    }
+
+    .sobre-box .sobre-txt p {
+        font-size: 1.2em;
+        line-height: 1.6;
+    }
+
+    .skills{
+        text-align: center;
+        width: 100%;
+    }
+    .skills .skill-box ul{
+        list-style-position: inside; /* Faz o marcador aparecer dentro do conteúdo */
+        text-align: center;
+        & li{
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    section.sobre {
+        margin: 2em 0; /* Reduz a margem superior e inferior */
+        padding: 30px 5%; /* Reduz o padding para telas pequenas */
+    }
+
+    .sobre-box .sobre-img img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .sobre-box .sobre-txt h2 {
+        font-size: 1.8em;
+    }
+
+    .sobre-box .sobre-txt p {
+        font-size: 1em;
+    }
+
+    /* Reduz o gap entre os elementos para telas pequenas */
+    .container .sobre-box {
+        gap: 15px;
+    }
+}

@@ -1,0 +1,131 @@
+section.projeto{
+    height: 100%;
+    padding: 60px 4%;
+}
+.projeto-txt{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(88, 156, 247, 0.3);
+    border-radius: 16px;
+    color: #2ea1ff;
+    padding: 2em;
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+}
+
+.projeto-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.projeto-1{
+    display: flex;
+    gap: 10%;
+    align-items: center;
+}
+.projeto-1 img{
+    width: 450px;
+    border-radius: 30px 0 30px 0;
+}
+.projeto-1:nth-child(2){
+    flex-direction: row-reverse;
+}
+
+.projeto-1 .projeto-h1{
+    font-family: var(--font-primary);
+    font-size: 0.8em;
+    margin-bottom: 1em;
+    font-weight: 700;
+    color: var(--cor-white);
+}
+.projeto-1 .projeto-h2{
+    color: var(--cor-white);
+    font-family: var(--font-primary);
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+.projeto-1 .projeto-p{
+    font-family: var(--font-secondary);
+    color: var(--cor-white);
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+.projeto-1 .btn-contato button{
+    width: 250px;
+    height: 40px;
+    margin-top: 1em;
+}
+
+@media (max-width: 1024px) {
+    .projeto-1 {
+        gap: 5%; /* Reduz o espaço entre os elementos */
+    }
+
+    .projeto-1 .projeto-h2 {
+        font-size: 2rem; /* Reduz o tamanho do título */
+    }
+
+    .projeto-1 .projeto-p {
+        font-size: 0.85rem; /* Ajusta o tamanho do texto */
+    }
+}
+
+@media (max-width: 780px) {
+    .section.projeto {
+        padding: 40px 6%;
+    }
+
+    .projeto-container {
+        gap: 3rem; /* Reduz o espaço entre os projetos */
+    }
+
+    .projeto-1 {
+        flex-direction: column !important; /* Empilha os elementos no mobile */
+        text-align: center;
+        gap: 20px;
+    }
+
+    .projeto-1 img {
+        width: 100%;
+        max-width: 400px; /* Limita o tamanho da imagem */
+    }
+
+    .projeto-1 .projeto-h2 {
+        font-size: 1.8rem; /* Ajusta o título */
+    }
+
+    .projeto-1 .projeto-p {
+        font-size: 1.2rem;
+    }
+
+    .projeto-1 .btn-contato button {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section.projeto {
+        padding: 30px 5%;
+    }
+
+    .projeto-1 .projeto-h2 {
+        font-size: 1.5rem;
+    }
+
+    .projeto-1 .projeto-p {
+        font-size: 1rem;
+    }
+
+    .projeto-1 img {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .projeto-1 .btn-contato button {
+        width: 100%;
+        height: 48px;
+    }
+}
